@@ -1,0 +1,16 @@
+.table td{
+    padding: 5px;
+    border: 1px solid #ddd;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.table th{
+    padding:5px;
+    margin-left: 20px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+.table-responsive{
+    overflow-x:auto;
+}

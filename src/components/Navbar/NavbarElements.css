@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+    
+    background: lightblue;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 1.4;
+    font-size: 24px;
+}
+
+.mainnav {
+    float: left;
+    position: relative;
+    top: 0;
+    left: -50px;
+    background: transparent;
+}
+
+.mainnav ul {
+    text-align: center;
+}
+
+.mainnav ul li {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    background: crimson;
+    text-transform: uppercase;
+    transition: all .4s ease-out;
+}
+
+nav ul li:after {
+    position: absolute;
+    background: white;
+    color: crimson;
+    top: 0;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    opacity: .5;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition: all .4s ease-out;
+}
+.restaurantIcon{
+    align-self: center;
+    justify-self: center;
+    margin:35%;
+    color:white;
+}
+.analyticsIcon{
+    align-self: center;
+    justify-self: center;
+    margin:35%;
+    color:white;
+}
+.homeIcon{
+    align-self: center;
+    justify-self: center;
+    margin:35%;
+    color:white;
+}
+.fitnesscenterIcon{
+    align-self: center;
+    justify-self: center;
+    margin:35%;
+    color:white;
+}
+.homepage:after {
+    content: "Home";
+    line-height: 120px;
+}
+
+.workoutpage:after {
+    content: "Workout";
+    line-height: 120px;
+}
+
+.analyticspage:after {
+    content: "Analytics";
+    line-height: 120px;
+}
+
+.foodpage:after {
+    content: "Food";
+    line-height: 120px;
+}
+
+nav ul li:hover {
+    transform: translateX(-100px);
+}
+
+nav ul li:hover:after {
+    opacity: 1;
+    transform: perspective(360px) rotateY(0deg) scale(1);
+}
+
+
+nav ul li>div {
+    display: inline-block;
+    padding: 25px 0;
+    background: transparent;
+}
+
+nav ul li div {
+    position: relative;
+}
+
+nav ul li div:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: crimson;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition: all .4s ease-out;
+}

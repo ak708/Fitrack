@@ -1,0 +1,8 @@
+.WorkoutMain{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
